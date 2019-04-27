@@ -2,7 +2,7 @@
 
 Homebrew Tap for sigil
 
-**Important note: reporting issues with any of these brews should be done [here](https://github.com/danmx/sigil).**
+**Important note: reporting issues with this brew should be done [here](https://github.com/danmx/sigil).**
 
 ## Installation
 
