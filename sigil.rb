@@ -2,8 +2,8 @@ class Sigil < Formula
     desc "AWS SSM Session manager client"
     homepage "https://github.com/danmx/sigil"
     url "https://github.com/danmx/sigil.git",
-        :tag      => "0.2.1",
-        :revision => "f95be15e57ae9daef80f5db680e4a0c7f09e4d18"
+        :tag      => "0.3.0",
+        :revision => "257e41cb914162df9ffb2fdd1a72098deabc7eb5"
     head "https://github.com/danmx/sigil.git"
   
     # Depends on AWS session-manager-plugin
