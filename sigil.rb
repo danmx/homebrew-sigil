@@ -2,7 +2,7 @@ class Sigil < Formula
     desc "AWS SSM Session manager client"
     homepage "https://github.com/danmx/sigil"
     baseurl "https://github.com/danmx/sigil/releases/download/"
-    version "0.3.3"
+    version "0.4.0"
     @@bin_name "sigil"
 
     # Depends on AWS session-manager-plugin
@@ -12,10 +12,10 @@ class Sigil < Formula
 
     if OS.mac?
       kernel = "darwin-amd64"
-      sha256 "39fa73472d2741293369207552bf997b77d0b72584c972cf58f16b6f522503ec"
+      sha256 "f343d5e87935ae46f9c081d04196079092e201a7276e77d71a18cf1e2d5f1d75"
     elsif OS.linux?
       kernel = "linux-amd64"
-      sha256 "543f161e32e4abcdc59acc36e1879dc98e579658fa59c03b0801c011f8005491"
+      sha256 "19b335c1f016bad13f5840041e4f5db7953ecaf42e65ba8da7ac674a3e1ffc0a"
     end
 
     url baseurl + "/" + version + "/" + @@bin_name + "_" + kernel + ".tar.gz"
