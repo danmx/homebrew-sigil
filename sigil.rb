@@ -1,9 +1,8 @@
 class Sigil < Formula
     desc "AWS SSM Session manager client"
     homepage "https://github.com/danmx/sigil"
-    baseurl "https://github.com/danmx/sigil/releases/download/"
+    baseurl = "https://github.com/danmx/sigil/releases/download/"
     version "0.4.0"
-    @@bin_name "sigil"
 
     # Depends on AWS session-manager-plugin
     # https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html
@@ -18,10 +17,10 @@ class Sigil < Formula
       sha256 "19b335c1f016bad13f5840041e4f5db7953ecaf42e65ba8da7ac674a3e1ffc0a"
     end
 
-    url baseurl + "/" + version + "/" + @@bin_name + "_" + kernel + ".tar.gz"
+    url baseurl + "/" + version + "/sigil_" + kernel + ".tar.gz"
   
     def install
-        bin.install @@bin_name
+        bin.install "sigil"
     end
 
     def caveats; <<~EOS
