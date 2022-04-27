@@ -7,8 +7,6 @@ class Sigil < Formula
     # Depends on AWS session-manager-plugin
     # https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html
 
-    bottle :unneeded
-
     if OS.mac?
       kernel = "darwin-amd64"
       sha256 "f811142c0a6a4dfd0b051c94be76f7b02c3528adb907817ad209b2f280bff284"
